@@ -7,4 +7,5 @@ RUN apt-get update \
   && rm get-pip.py \
   && pip install aws-shell \
   && apt-get clean
+VOLUME /root/.aws/
 ENTRYPOINT aws-shell
