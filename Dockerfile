@@ -8,4 +8,4 @@ RUN apt-get update \
   && pip install aws-shell \
   && apt-get clean
 VOLUME /root/.aws/
-ENTRYPOINT aws-shell
+CMD aws-shell
